@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>랜덤 숫자 맞추기 게임</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <dixv class="stage01">
+                <button id="sbtn" class="start_btn">시작하기</button>
+            <div class="stage02">
+                <p class="gameStartText">내가 생각하고 있는 숫자를 맞춰보세요 ! ( 1 ~ 100 )</p>
+                <p>
+                    <input id = "numinput" type="number" placeholder="ex)15" name="num"/>
+                    <button id="apbtn" class="apply_btn">제출</button>
+                    <span>기회가
+                        <strong class='leftNum'>10번</strong>남았어요 !</span>
+                </p>
+                <ul class="log">
+                    <!-- <li>00을 입력했어요 ! 00보다 높아요 !</li> <li>00을 입력했어요 ! 00보다 낮아요 !</li> -->
+                </ul>
+
+                <p class="reStart">
+                    <button id="restartBtn" class="btn_restart">다시 할래요 !</button>
+                    <button id="endBtn" class="btn_end">그만 할래요 !</button>
+                </p>
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="RandGame.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(46, 45, 45);
+}
+h2{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+a { text-decoration: none; color: white; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+
+.bottom{
+    text-align: center;
+}
+.search{
+    width: 500px;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    position: absolute;
+    margin: 0 auto;
+}
+.inner_search{
+    position:relative;
+    width: 400px;
+    outline: none;
+    border:none;border-right:0px; border-top:0px;
+}
+.fa-solid.fa-magnifying-glass{
+    position:absolute; top:290px; right: 745px;
+}
+.fa-solid.fa-keyboard{
+    position:absolute; top: 290px; right:310px;
+}
+
+.fa-solid.fa-microphone{
+    position:absolute; top: 290px; right:280px;
+}
