@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+</head>
+<style>
+.container{
+    display: flex;
+}
+.background_1{
+    background-color: white;
+    padding: 50%;
+    height: 3500px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="background_1"></div>
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    
+    $(document).ready(function(){
+        $('background_1').click(function(){
+            //슬라이드 코드
+        });
+        $(document).scroll(function() { 
+            scroll_pos = ($(this).scrollTop())/100;
+            $(".background_1").css('background-color', 'rgb('+scroll_pos+","+scroll_pos+","+scroll_pos+")");
+            $(".background_1").css("transition","1s");
+        });
+    });
+</script>
+</html>
