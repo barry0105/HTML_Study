@@ -29,9 +29,10 @@
             //슬라이드 코드
         });
         $(document).scroll(function() { 
-            scroll_pos = ($(this).scrollTop())/100;
-            $(".background_1").css('background-color', 'rgb('+scroll_pos+","+scroll_pos+","+scroll_pos+")");
-            $(".background_1").css("transition","1s");
+            scroll_pos = ($(this).scrollTop())/15;
+            console.log(scroll_pos);
+            $(".background_1").css('background-color', 'rgb('+scroll_pos+',255,'+scroll_pos+')');
+            $(".background_1").css("transition","0.5s");
         });
     });
 </script>
