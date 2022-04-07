@@ -13,6 +13,10 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
+    .bt_div{
+        display: flex;
+        align-self: center;
+    }
     .item1{
         position: relative; position: relative; 
         background: red;
@@ -56,19 +60,33 @@
     .RtoL{
         display: none;
     }
+    .Loop10{
+        width: 30vh;
+        align-self: center;
+    }
+    .change_C{
+        width: 30vh;
+        align-self: center;
+    }
+    .Updown{
+        width: 30vh;
+        align-self: center;
+    }
 </style>
 <body>
     <div class="container">
-        <div class="item1">1</div>
-        <div class="item2">2</div>
-        <div class="item3">3</div>
-        <div class="item4">4</div>
-        <div class="item5">5</div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
         <div class="bt_div">
             <input type="button" class = "LtoR" value="오른쪽으로 이동">
-            <input type="button" class = "RtoL" value="왼쪽으로 이동" > 
+            <input type="button" class = "RtoL" value="왼쪽으로 이동" >
         </div>
-        
+        <input type="button" class = "Loop10" value="10번 반복하기"/>
+        <input type="button" class = "change_C" value="색깔 바꾸기"/>
+        <input type="button" class = "Updown" value="위 아래"/>
     </div>
 </body>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -77,21 +95,39 @@
         $(".LtoR").click(function(){
             $(this).css("display","none");
             $('.RtoL').css("display","block");
-            $('.item1').animate({left:"60vh"},1000);
-            $('.item2').animate({left:"60vh"},1000);
-            $('.item3').animate({left:"60vh"},1000);
-            $('.item4').animate({left:"60vh"},1000);
-            $('.item5').animate({left:"60vh"},1000);
+            for(let i=1;i<=5;i++){
+                $('.item'+i).animate({left:"60vh"},1000);
+            }
+            
         });
         $(".RtoL").click(function(){
             $(this).css("display","none");
             $('.LtoR').css("display","block");
-            $('.item1').animate({left:"-60vh"},1000);
-            $('.item2').animate({left:"-60vh"},1000);
-            $('.item3').animate({left:"-60vh"},1000);
-            $('.item4').animate({left:"-60vh"},1000);
-            $('.item5').animate({left:"-60vh"},1000);
+            for(let i=1;i<=5;i++){
+                $('.item'+i).animate({left:"-60vh"},1000);
+            }
         });
+        $(".Loop10").click(function(){
+            for(let i=0; i<10;i++){
+                for(let j=1;j<=5;j++){
+                $('.item'+j).animate({left:"60vh"},1000);
+                $('.item'+j).animate({left:"-60vh"},1000);
+            }
+            }
+        });
+        $(".change_C").click(function(){
+            for(let i=1;i<=5;i++){
+                $(".item"+i).css("background","rgb("+Math.floor(Math.random() * 255)+", "+Math.floor(Math.random() * 255)+", "+Math.floor(Math.random() * 255)+")");
+            }
+        });
+        $(".Updown").click(function(){
+            for(let i=1;i<=5;i++){
+                $('.item'+i).animate({top:"10vh"},1000);
+                $('.item'+i).animate({top:"-10vh"},1000);
+            }
+                
+        });
+
     });
 </script>
 </html>
