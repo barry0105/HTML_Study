@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>레드향 주문하기</title>
+</head>
+<body >
+    <img src="/images/tangerines.jpg" alt="대체 텍스트(레드향)" title="레드향"><br>
+    <div style="background-color : yellow">
+        <form>
+            <fieldset>
+                <legend>상품 선택</legend>
+                <strong>주문할 상품을 선택해 주세요.</strong>
+                <ul>
+                    <li><input type="checkbox"><label>선물용 3kg</label><input type="number" min="0" max="5"><label>개</label><small> (최대 5개)</small></li>
+                    <li><input type="checkbox" checked><label>선물용 5kg</label><input type="number" min="0" max="3" value="1"><label>개</label><small> (최대 3개)</small></li>
+                    <li><input type="checkbox"><label>가정용 3kg</label><input type="number" min="0" max="5"><label>개</label><small> (최대 5개)</small></li>
+                    <li><input type="checkbox"><label>가정용 5kg</label><input type="number" min="0" max="3"><label>개</label><small> (최대 3개)</small></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul>
+                    <li><label for="name">이름 </label><input type="text" id="name"></li>
+                    <li><label for="address">배송주소 </label><input type="text" id="address"></li>
+                    <li><label for="email">이메일 </label><input type="email" id="email"></li>
+                    <li><label for="phone">연락처 </label> </label><input type="tel" id="phone"></li>
+                    <li><label for="choose">배송 지정 </label> </label><input type="date" id="choose"><small> (주문일로부터 최소 3일 이후)</small></li>
+                    <li><label for="note">메모</label><textarea id="note" cols="30" rows="5"></textarea></li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+            <a href="/practice10.html" target="_blank"><input type="button" value="홈화면"></a>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
