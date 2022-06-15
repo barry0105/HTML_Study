@@ -1,2 +1,3 @@
-# HTML_Study
-HTML, CSS, JS 공부
+# 공부한 지식들
+<hr>
+<h1>Flex 관련 기본 지식 정리
