@@ -1,3 +1,4 @@
+#Flex 관련 기본 지식 정리
 display: flex;
 display: inline-flex;  
 
