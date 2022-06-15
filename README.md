@@ -48,4 +48,32 @@ align-content: space-evenly;
 /*setting default-size*/
 flex-basis: auto; /*default*/
 %, px, rem, content ... etc
+
+/*grow items*/
+flex-grow: 0; /*default*/
+
+/*minimize-items*/
+flex-shrink: 1; /*default*/
+
+/*flex-grow, flex-shrink, flex-basis*/
+flex: 1;
+/* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+flex: 1 1 auto;
+/* flex-grow: 1; flex-shrink: 1; flex-basis: auto; */
+flex: 1 500px;
+/* flex-grow: 1; flex-shrink: 1; flex-basis: 500px; */
+  
+/*sort UpDown*/
+align-self: auto;
+align-self: stretch;
+align-self: flex-start;
+align-self: flex-end;
+align-self: center;
+align-self: baseline;
+
+/*order items*/
+order: numbers;
+
+/*position order*/
+z-index: number;
 ```
