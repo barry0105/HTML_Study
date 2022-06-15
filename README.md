@@ -1,3 +1,7 @@
-# 공부한 지식들
+# Study -
 <hr>
-<h1>Flex 관련 기본 지식 정리
+<br>
+<h1>Flex
+<h2> apply to Container
+  - display : flex;
+  - display : inline-flex;
