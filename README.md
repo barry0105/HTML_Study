@@ -1,7 +1,7 @@
 # Study - HTML
 
 **Flex**<br>
-**1. apply to Container**<br>
+1. apply to Container<br>
 
 ```
 display : flex;
