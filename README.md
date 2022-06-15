@@ -3,5 +3,5 @@
 <br>
 <h1>Flex
 <h2> apply to Container
-  - display : flex;
+  - display : flex;<br>
   - display : inline-flex;
