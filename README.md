@@ -1,7 +1,6 @@
-# Study -
+# Study - HTML
 <hr>
-<br>
 <h1>Flex
-<h2> apply to Container
+<h2> apply to Container<br>
   - display : flex;<br>
   - display : inline-flex;
