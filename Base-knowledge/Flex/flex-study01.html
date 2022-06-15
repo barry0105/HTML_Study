@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 익히기 - 1</title>
+    <style>
+        .container{
+            display: flex;
+            /* display: inline-flex; */
+
+            /* flex-direction: row; 정렬 방향 */
+	        /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+	        /* flex-direction: column-reverse; */
+
+            /*flex-wrap: nowrap;* 줄넘김 처리/
+	        /* flex-wrap: wrap; */
+	        /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row wrap;*/
+            /* 아래의 두 줄을 줄여 쓴 것 */
+	        /* flex-direction: row; */
+	        /* flex-wrap: wrap; */
+            
+            /* justify-content: flex-start; 메인축 방향 정렬*/
+	        /* justify-content: flex-end; */
+	        /* justify-content: center; */
+	        /* justify-content: space-between; */
+	        /* justify-content: space-around; */
+	        /* justify-content: space-evenly; */
+
+            /* align-items: stretch; 수직축 방향 정렬*/
+	        /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: baseline; */
+
+            /* align-content: stretch;* wrap이 설정된 상태에서 아이템들의 행이 2줄 이상 되었을 때 수직충 방향 정렬하는 법/
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+        }
+        .container div{
+            padding: 10px;
+        }
+        .div1{
+            background-color: green;
+        }
+        .div2{
+            background-color: yellow;
+        }
+        .div3{
+            background-color: blue;
+        }
+        .div4{
+            background-color: #eee;
+        }
+        .div5{
+            background-color: red;
+        }
+        .div6{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">박스 1</div>
+        <div class="div2">박스 2</div>
+        <div class="div3">박스 3</div>
+        <div class="div4">박스 4</div>
+        <div class="div5">박스 5</div>
+        <div class="div6">박스 6</div>
+    </div>
+    
+</body>
+</html>
