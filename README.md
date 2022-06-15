@@ -34,7 +34,7 @@ align-items: flex-end;
 align-items: center;
 align-items: baseline;
 
-/*sort -rows*/
+/*sort - rows*/
 align-content: stretch;
 align-content: flex-start;
 align-content: flex-end;
@@ -42,4 +42,10 @@ align-content: center;
 align-content: space-between;
 align-content: space-around;
 align-content: space-evenly;
+```
+2. apply to Flex items
+```
+/*setting default-size*/
+flex-basis: auto; /*default*/
+%, px, rem, content ... etc
 ```
