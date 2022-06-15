@@ -1,4 +1,4 @@
-# Study - HTML
+# Study - CSS
 
 **Flex**<br>
 1. apply to Container<br>
