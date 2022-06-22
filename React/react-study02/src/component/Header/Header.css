@@ -1,0 +1,35 @@
+.nav{
+    background-color: #eee;
+    z-index: 5;
+  }
+  .nav ul{
+    margin: 0;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav li{
+    position: relative;
+    text-align: center;
+    list-style: none; 
+    margin: 20px;
+    left: -20px;
+    
+  }
+ .nav li img{
+    justify-self: left;
+    height: 70px;
+ }
+ .nav-middle{
+    display: flex;
+    position: relative;
+    left: -80px;
+ }
+ .nav-middle li{
+    text-decoration: none;
+ }
+ .nav-middle li:hover{
+    color:blue;
+    cursor: pointer;
+ }
