@@ -38,7 +38,7 @@ height: 100%;
   z-index: 0;
   background-image: url('../public/img/bg1.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:contain;
 }
 .Home .Text{
   position: relative;

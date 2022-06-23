@@ -32,7 +32,17 @@ function Page1(props) {
             'Question' : '질문 4',
             'Answer' : ['대답 1','대답 2'],
             'Values' : ['T','J']
-        }];
+        },{
+            'id' : 4,
+            'Question' : '질문 5',
+            'Answer' : ['대답 1','대답 2'],
+            'Values' : ['바보','천재']
+        },{
+            'id' : 5,
+            'Question' : '질문 6',
+            'Answer' : ['대답 1','대답 2'],
+            'Values' : ['하이','바이']
+        },];
     const createQuestion = 
             Question.map((li,idx)=>
                 (<div className='Question'>
