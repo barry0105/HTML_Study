@@ -42,7 +42,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-
     margin: 5px;
     z-index: 5;
     border: 2px solid green;
@@ -68,5 +67,6 @@
 }
 .survey-unit label:hover{
     cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
     background-color: burlywood;
 }
