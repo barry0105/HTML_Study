@@ -42,16 +42,16 @@ function Page1(props) {
                     <div className='survey-wrap'>
                     <div className='survey-unit' >
                         <input type='radio' name={idx} id={li.id}/>
-                        <label for={li.id}>
+                        <label for={li.id} onClick={()=>{ResultAppend(li.Values[0])}}>
                         <span></span>
-                        <p onClick={()=>{ResultAppend(li.Values[0])}}>{li.Answer[0]}</p>
+                        <p >{li.Answer[0]}</p>
                         </label>
                     </div>
                     <div className='survey-unit' >
                         <input type='radio' name={idx} id={li.id+1} value={li.Values[1]}/>
-                        <label for={li.id+1}>
+                        <label for={li.id+1} onClick={()=>{ResultAppend(li.Values[1])}}>
                         <span></span>
-                        <p onClick={()=>{ResultAppend(li.Values[1])}}>{li.Answer[1]}</p>
+                        <p >{li.Answer[1]}</p>
                         </label>
                     </div>
                     </div>
@@ -70,7 +70,6 @@ function Page1(props) {
         });
     return (
         <div className='Background'>
-            <button onClick={()=>{console.log(result)}}>결과 확인</button>
             {createQuestion[Page]}
         </div>
     );

@@ -42,7 +42,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+
     margin: 5px;
     z-index: 5;
     border: 2px solid green;
@@ -55,15 +55,19 @@
     cursor: pointer;
     background-color: burlywood;
 }
+.survey-unit p{
+    margin: 10px;
 
-.survey-unit p:hover {
-    cursor: pointer;
-    background-color: burlywood;
 }
 .survey-unit input[type="radio"]{
     display: none;
 }
 .survey-unit label{
+    border-radius: 10px 10px 10px 10px;
     width: 100%;
     z-index: 1;
+}
+.survey-unit label:hover{
+    cursor: pointer;
+    background-color: burlywood;
 }
