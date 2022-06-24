@@ -43,8 +43,8 @@ function Page1(props) {
         },{
             'id' : 5,
             'Question' : '질문 6',
-            'Answer' : ['대답 1','대답 2'],
-            'Values' : ['T','F']
+            'Answer' : ['대답 1','대답 2','대답 3','대답 4'],
+            'Values' : ['T','F','J', 'P']
         },];
     const createQuestion = 
             Question.map((li,idx)=>
@@ -66,6 +66,24 @@ function Page1(props) {
                     <p >{li.Answer[1]}</p>
                     </label>
                     </div>
+                    {
+                        li.Values[2] && (<div className='survey-unit'>
+                        <input type='radio' name={li.id} id={li.id}/>
+                        <label for={li.id} onClick={()=>{ResultAppend(li.Values[2])}}>
+                        <span></span>
+                        <p >{li.Answer[2]}</p>
+                        </label>
+                        </div>)
+                    }
+                    {
+                        li.Values[3] && (<div className='survey-unit'>
+                        <input type='radio' name={li.id} id={li.id}/>
+                        <label for={li.id} onClick={()=>{ResultAppend(li.Values[3])}}>
+                        <span></span>
+                        <p >{li.Answer[3]}</p>
+                        </label>
+                        </div>)
+                    }
                 </div>
                 </div>
                 )
