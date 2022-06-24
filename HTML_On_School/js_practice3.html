@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_practice3(자리 배치도)</title>
+    <style>
+        table, td{
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>자리 배치도</h1>
+    <script>
+        var i, j;
+        var memNum = parseInt(prompt('전체 입장객을 입력하세요'));
+        var colNum = parseInt(prompt('한 줄에 앉을 사람 수를 입력하세요 '));
+        if(memNum%colNum == 0){
+            rowNum = parseInt(memNum / colNum);
+        }
+        else{
+            rowNum = parseInt(memNum / colNum) +1;
+        }
+        document.write("<table>");
+        for(var i=0;i<=rowNum;i++){
+            document.write("<tr>");
+            for(var j=1;j<=colNum;j++){
+                seatNo = i *colNum + j;
+                if(seatNo > memNum){break;}
+                document.write("<td> 좌석 "+seatNo+"</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
