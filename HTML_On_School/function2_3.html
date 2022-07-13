@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트(함수)</title>
+        <script>
+            function login(id, pw){
+                if(id=="gyujin"){
+                    if(pw == "1234"){
+                        document.write(id+"님 방문 환영합니다.");
+                    }
+                    else{
+                        alert("잘못된 비밀번호 입니다.");
+                    }
+                }
+                else{
+                    alert("존재하지 않는 아이디 입니다.");
+                }
+            }
+            var user_id = prompt("아이디를 입력하세요.");
+            var user_pw = prompt("패스워드를 입력하세요");
+            login(user_id, user_pw);
+        </script>        
+    </head>
+</html>

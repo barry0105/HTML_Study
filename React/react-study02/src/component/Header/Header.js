@@ -17,7 +17,7 @@ function Header(props) {
                 <li>설정</li>
                 <li>학교 홈페이지</li>
                 <li>Github</li>
-                <li className='copyright'>ⓒ 2022 (김규진,김채은,전해린,방주현) all rights reserved</li>
+                <li className='copyright'>ⓒ 2022 INBTI all rights reserved</li>
             </ul>
             </div>
     );
@@ -33,7 +33,7 @@ function Header(props) {
                 <div className='nav-middle'>
                     <Link to="/" style={{textDecoration: 'none', color: 'black'}}><li>홈</li></Link>
                     <Link to='/ToBoard'  style={{textDecoration: 'none', color: 'black'}}><li>게시판</li></Link>
-                    <Link to='/ToSurvey'  style={{textDecoration: 'none', color: 'black'}}><li>설문조사</li></Link>
+                    <Link to='/ToSurvey'  style={{textDecoration: 'none', color: 'black'} }><li>설문조사</li></Link>
                     <Link to='/info'  style={{textDecoration: 'none', color: 'black'}}><li>정보</li></Link>
                 </div>
                 

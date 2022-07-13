@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>함수</title>
+    <script>
+       function outerFunction(){
+        var a = 10;
+        var b = 20;
+        function innerFunction(){
+            var b = 30;
+            alert(a);
+            alert(b);
+        }
+        innerFunction();
+        alert("outerFunction");
+       } 
+       outerFunction();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
